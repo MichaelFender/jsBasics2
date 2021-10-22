@@ -22,6 +22,11 @@
 */
 
 //CODE HERE
+const greetUser = string => {return `Welcome back, ${string}` }
+
+let username = greetUser('Andrew')
+
+console.log(username);
 
 
 
