@@ -89,7 +89,13 @@ console.log (newCartTotal)
 */
 
 /*
-    TEXT ANSWER HERE
+    Customer Object[
+    fullName : to identify the customer
+    address : for deliveries
+    lastOrder : to use for suggested future orders
+    allergies : to flag if customer orders item that has ingredients that they are allergic to 
+    ]
+
 
 */
 
@@ -99,3 +105,5 @@ console.log (newCartTotal)
 */
 
 //CODE HERE
+
+
