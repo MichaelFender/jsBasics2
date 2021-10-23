@@ -122,7 +122,7 @@ const foodArr = [
     popularity: 9,
     rating: 8, 
     tags: ['salad', 'vegetable']
-    }
+    },
     {
     name: 'Apple Pie',
     price: 5,
@@ -130,7 +130,7 @@ const foodArr = [
     popularity: 7,
     rating: 10, 
     tags: ['pie', 'apple']
-    }
+    },
     {
     name: 'Milkshake',
     price: 8,
@@ -155,8 +155,16 @@ const foodArr = [
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+const filteredFood = foodArr.filter() => {
+            for (let i = 0; i < arr.length; i++) {
+            if (arr[i].tags === tags) {
+                return x(arr[i])
+            }
+        }
+    } 
+  
+        
+console.log(filteredFood);
 
 
 //////////////////PROBLEM 5////////////////////
@@ -199,6 +207,7 @@ const foodArr = [
 */
 
 //CODE HERE
+
 
 
 /*
