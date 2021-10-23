@@ -71,7 +71,7 @@ console.log (pizza.tags[1]);
 
 //CODE HERE
 let discountPrice = (pizza.price * 0.75) //25% off
-console.log(newPrice);
+console.log(discountPrice);
 
 
 /*
@@ -82,7 +82,8 @@ console.log(newPrice);
 */
 
 //CODE HERE
-
+let {category} = pizza;
+console.log(category);
 
 //////////////////PROBLEM 3////////////////////
 /* 
