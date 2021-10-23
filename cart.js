@@ -38,7 +38,7 @@ const cart = [
 const summedPrice = cart.reduce(function (item, sale){
     return item + sale.price;
 },0);
-console.log(summedPrice);
+
 
 
 //////////////////PROBLEM 2////////////////////
