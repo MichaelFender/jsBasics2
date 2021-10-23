@@ -34,7 +34,7 @@
 const pizza = 
     {
       name: 'Meat Monster',
-      price: 29.99,
+      price: 100,
       category: 'specialty',
       popularity: 10,
       rating: 9, 
@@ -60,7 +60,7 @@ console.log (`Popularity of this pizza is ${pizza.popularity}`);
 */
 
 //CODE HERE
-
+console.log (pizza.tags[1]);
 
 /*
     Third, destructure the price off of the
@@ -70,6 +70,8 @@ console.log (`Popularity of this pizza is ${pizza.popularity}`);
 */
 
 //CODE HERE
+let discountPrice = (pizza.price * 0.75) //25% off
+console.log(newPrice);
 
 
 /*
