@@ -56,7 +56,19 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
+function canWeDeliver(zipCode) {
+    if (deliveryAreaZipCodes.includes(zipCode)){
+        return 'You are in our delivery zone!';
+    } else {
+        return 'Sorry, we can\'t deliver to that address';
+    }
+}
+var myZipCode = 85205;
+console.log(`Checking if ${myZipCode} is in the delivery zone...`);
+console.log(canWeDeliver(myZipCode));
 
+
+  
 
 /* 
     Problem 2 Continued
@@ -76,6 +88,18 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 */
 
 // CODE HERE
+function canWeDeliverTwo(zipCode) {
+    for (i = 0; i < deliveryAreaZipCodes.length; i++){
+        if (deliveryAreaZipCodes[i] == zipCode) {
+            return 'You are in our delivery zone!';
+        }
+    }
+    return 'Sorry, we can\'t deliver to that address';
+}
+var myZipCode = 70507;
+console.log(`Checking if ${myZipCode} is in the delivery zone...`);
+console.log(canWeDeliverTwo(myZipCode));
+
 
 
 //////////////////PROBLEM 3////////////////////
@@ -112,7 +136,8 @@ const deals = [
 */
 
 //CODE HERE
-
+deals[0].title = deals[0].title.replace ('15', '10');
+console.log(deals[0].title);
 
 
 /*
@@ -129,3 +154,5 @@ const deals = [
 */
 
 //CODE HERE
+deals[1].desc = deals[1].desc.replace ('March', 'April').trim();
+console.log(deals[1].desc);
