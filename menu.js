@@ -31,8 +31,15 @@
 */
 
 //CODE HERE
-
-
+const pizza = 
+    {
+      name: 'Meat Monster',
+      price: 29.99,
+      category: 'specialty',
+      popularity: 10,
+      rating: 9, 
+      tags: ['family', 'meat', 'popular']
+    }
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -43,7 +50,7 @@
 */
 
 //CODE HERE
-
+console.log (`Popularity of this pizza is ${pizza.popularity}`);
 
 /*
     Second, log the second tag in your pizza's

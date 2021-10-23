@@ -106,10 +106,12 @@ console.log (newCartTotal)
 
 //CODE HERE
 
-const customer = [
+const customer =
     {
       name: 'Michael Fender', 
       address: '123 America BLVD, 70507', 
-      lastOrder: loadedNAchos, 
-      allergies: false, 
-    }]
+      lastOrder: "Loaded Nachos", 
+      allergies: "None", 
+    
+    }
+console.log (`${customer.name}, - ${customer.address}, - ${customer.lastOrder}, - ${customer.allergies}`);
