@@ -106,4 +106,10 @@ console.log (newCartTotal)
 
 //CODE HERE
 
-
+const customer = [
+    {
+      name: 'Michael Fender', 
+      address: '123 America BLVD, 70507', 
+      lastOrder: loadedNAchos, 
+      allergies: false, 
+    }]
