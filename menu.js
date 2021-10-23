@@ -31,7 +31,7 @@
 */
 
 //CODE HERE
-const pizza = 
+const pizza =   
     {
       name: 'Meat Monster',
       price: 100,
@@ -98,8 +98,48 @@ console.log(category);
 */
 
 //CODE HERE
-
-
+const foodArr = [
+    {
+    name: 'Bean Burger',
+    price: 18,
+    category: 'Burger',
+    popularity: 6,
+    rating: 3, 
+    tags: ['vegitarian', 'burger']
+    },
+    {
+    name: 'Steak',
+    price: 20,
+    category: 'Entree',
+    popularity: 10,
+    rating: 9, 
+    tags: ['steak', 'meat']
+    }, 
+    {
+    name: 'Salad',
+    price: 11,
+    category: 'Starter',
+    popularity: 9,
+    rating: 8, 
+    tags: ['salad', 'vegetable']
+    }
+    {
+    name: 'Apple Pie',
+    price: 5,
+    category: 'Dessert',
+    popularity: 7,
+    rating: 10, 
+    tags: ['pie', 'apple']
+    }
+    {
+    name: 'Milkshake',
+    price: 8,
+    category: 'Drink',
+    popularity: 11,
+    rating: 12, 
+    tags: ['dessert', 'ice cream']
+    }
+  ]
 
 //////////////////PROBLEM 4////////////////////
 /* 
