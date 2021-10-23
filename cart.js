@@ -62,7 +62,8 @@ function calcFinalPrice (cartTotal, couponValue, tax){
 const tax = 0.06
 let couponValue = 20
 let cartTotal = 1000
-
+let newCartTotal = ((tax * cartTotal) + cartTotal - couponValue)
+console.log (newCartTotal)
     
 
 
