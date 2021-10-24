@@ -46,6 +46,8 @@ me.getSchedule();
 */
 
 //CODE HERE
+let empOne = new Employee('Jess', 'weekday mornings and weekday afternoons');
+
 
 /*
     Call the `getSchedule` method on the
