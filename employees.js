@@ -100,8 +100,9 @@ console.log(empTwo);
 
 //CODE HERE
 class Manager extends Employee {
-    constructor(name, shifts, empOne, empTwo){
+    constructor(name, shifts, employees){
         super(name, shifts)
+        employees = new Array(empOne, empTwo)
         this.empOne = empOne
         this.empTwo = empTwo
     }
@@ -132,7 +133,7 @@ let manager = new Manager('Winston', 'weekday mornings and weekday afternoons', 
 */
 
 //CODE HERE
-
+manager.getEmployees();
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
@@ -140,6 +141,7 @@ let manager = new Manager('Winston', 'weekday mornings and weekday afternoons', 
 */
 
 //CODE HERE 
+manager.addEmployee('Coach')
 
 /*
     Call the `getEmployees` method on the
@@ -148,3 +150,5 @@ let manager = new Manager('Winston', 'weekday mornings and weekday afternoons', 
 */
 
 //CODE HERE
+manager.getEmployees()
+console.log(getEmployees);
