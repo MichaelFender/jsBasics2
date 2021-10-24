@@ -218,3 +218,5 @@ console.log(filteredFoodArr);
 */
 
 //CODE HERE
+filteredFoodArr.filter(property, number, type, foodArr);
+console.log(filteredFoodArr);
