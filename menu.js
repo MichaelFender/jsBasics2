@@ -155,15 +155,8 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter() => {
-            for (let i = 0; i < arr.length; i++) {
-            if (arr[i].tags === tags) {
-                return x(arr[i])
-            }
-        }
-    } 
-  
-        
+const filteredFood = foodArr.filter(tags => tags == 'dessert')
+
 console.log(filteredFood);
 
 
@@ -207,9 +200,16 @@ console.log(filteredFood);
 */
 
 //CODE HERE
+function filterByProperty(property, number, type){
+    property.make = ('rating', 'popularity', 'price')
+    number.make = 100
+    type.make = (above, below)
+    let foodArr = [];
 
+    filteredFoodArr = foodArr.filter(type => type.make === above)
 
-
+console.log(filteredFoodArr);
+}
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
