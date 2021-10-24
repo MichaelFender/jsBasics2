@@ -35,16 +35,14 @@ class Ticket {
         this.items = items
         this.orderTime = orderTime
         this.customerId = customerId
-        
+        this.status = ('qued')
     }
     updateStatus(){
-
+        console.log(`The order for the customer ${this.customerId} is now ${this.status}.`);
     }
-         
 }
-let status = "qued"
-var customerId = "Mike"
-console.log (`The order for customer ${customerId} is now ${status}.`);
+let myTicket = new Ticket('Pizza', '3:00P.M.', 'Mike')
+myTicket.updateStatus();
  
 //console.log(`Checking if ${myZipCode} is in the delivery zone...`);
 //console.log(canWeDeliverTwo(myZipCode));
@@ -60,7 +58,9 @@ console.log (`The order for customer ${customerId} is now ${status}.`);
 */
 
 //CODE HERE
-
+// food ordered: pizza, bread, and soda
+// ordered at: 7:03 PM
+// customer: 575
 
 /*
     Call the `updateStatus` method on
