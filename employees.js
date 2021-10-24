@@ -70,6 +70,8 @@ empOne.getSchedule();
 */
 
 //CODE HERE
+const empTwo = { ...empOne}
+console.log(empTwo);
 
 
 
