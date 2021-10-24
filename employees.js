@@ -102,16 +102,21 @@ console.log(empTwo);
 class Manager extends Employee {
     constructor(name, shifts, employees){
         super(name, shifts)
-        employees = new Array(empOne, empTwo)
-        this.empOne = empOne
-        this.empTwo = empTwo
+        this.employees = employees
+       
+        
     }
     getEmployees(){
-        console.log(`${this.name} manages ${this.empOne}`);
+        console.log(`${this.name} manages ${this.employees}`);
+    
     }
+    addEmployee(emp){
+        let men = employees.push(emp);
+        
+
 }
-let work = new Manager('Mikey', '', 'Bill', '');
-work.getEmployees();
+}
+
 
 /*
     Create a new instance of your class.
