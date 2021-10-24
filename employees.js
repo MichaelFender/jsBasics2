@@ -70,7 +70,7 @@ empOne.getSchedule();
 */
 
 //CODE HERE
-const empTwo = { ...empOne}
+const empTwo = { ...empOne, name: 'Nick'}
 console.log(empTwo);
 
 
