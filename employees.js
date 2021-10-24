@@ -99,7 +99,10 @@ console.log(empTwo);
 */
 
 //CODE HERE
-
+class Manager extends Employee {
+    constructor(name, shifts)
+    super(name, shifts)
+}
 
 
 /*
