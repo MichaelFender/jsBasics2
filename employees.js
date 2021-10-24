@@ -124,7 +124,7 @@ work.getEmployees();
 */
 
 //CODE HERE
-
+let manager = new Manager('Winston', 'weekday mornings and weekday afternoons', 'CeCe', 'Schmidt');
 
 /*
     Call the `getEmployees` method on the
