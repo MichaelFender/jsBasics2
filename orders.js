@@ -34,15 +34,16 @@ class Ticket {
     constructor(items, orderTime, customerId){
         this.items = items
         this.orderTime = orderTime
-        this.customerId = (customerId)
-        this.status = newStatus
-        status = "qued"
+        this.customerId = customerId
+        
     }
-    status = ("qued")
-    updateStatus = ('newStatus')
+    updateStatus(){
+
+    }
          
 }
-var customerId = Mike 
+let status = "qued"
+var customerId = "Mike"
 console.log (`The order for customer ${customerId} is now ${status}.`);
  
 //console.log(`Checking if ${myZipCode} is in the delivery zone...`);
