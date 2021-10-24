@@ -55,7 +55,7 @@ let empOne = new Employee('Jess', 'weekday mornings and weekday afternoons');
 */
 
 //CODE HERE
-
+empOne.getSchedule();
 
 /*
     Make a copy of the empOne object
