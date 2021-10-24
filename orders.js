@@ -30,9 +30,23 @@
 */
 
 //CODE HERE
-
-
-
+class Ticket {
+    constructor(items, orderTime, customerId){
+        this.items = items
+        this.orderTime = orderTime
+        this.customerId = (customerId)
+        this.status = newStatus
+        status = "qued"
+    }
+    status = ("qued")
+    updateStatus = ('newStatus')
+         
+}
+var customerId = Mike 
+console.log (`The order for customer ${customerId} is now ${status}.`);
+ 
+//console.log(`Checking if ${myZipCode} is in the delivery zone...`);
+//console.log(canWeDeliverTwo(myZipCode));
 /*
     Create a new instance of your class.
     Save it to a variable called `firstTicket`.
