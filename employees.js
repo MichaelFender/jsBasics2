@@ -20,16 +20,22 @@
 */
 
 //CODE HERE
-class Employee{
+class Employee {
     constructor(name, shifts){
-        this.name = name
-        this.shifts = shifts
+        this.name = name;
+        this.shifts = shifts;
+        }
+    getSchedule(){
+        console.log(`${this.name} works on ${this.shifts}`);
     }
-    getSchedule()
 }
+let me = new Employee('Mikey', 'weekends');
+me.getSchedule();
+        
+        
 
 
-/*
+        /*
     Create a new instance of your class.
     Save it to a variable called `empOne`.
 
