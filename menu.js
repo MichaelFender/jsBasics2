@@ -201,8 +201,7 @@ console.log(filteredFood);
 
 //CODE HERE
 function filterByProperty(property, number, type){
-    //filter for each property value. For example, if property == 'price' then filter
-    //on price => price > number if type is above or price => price < number if type is below
+    //filter for each property value. For example, if property == 'price' then filter on price => price > number if type is above or price => price < number if type is below
     var filteredFoodArr;
 
     if (property == 'price') {
