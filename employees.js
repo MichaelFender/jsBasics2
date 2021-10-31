@@ -99,7 +99,9 @@ console.log(empTwo);
 */
 
 //CODE HERE
+
 class Manager extends Employee {
+
     constructor(name, shifts, employees){
         super(name, shifts)
         this.employees = employees
@@ -107,14 +109,16 @@ class Manager extends Employee {
         
     }
     getEmployees(){
-        console.log(`${this.name} manages ${this.employees}`);
+        console.log(`${this.name} manages ${JSON.stringify(this.employees)}`);
     
-    }
-    addEmployee(emp){
-        let men = employees.push(emp);
+     }
+     addEmployee(emp){
+       let newEmp = new Employee(emp, '');  
+       this.employees.push(newEmp);
         
+ }
 
-}
+
 }
 
 
@@ -130,7 +134,15 @@ class Manager extends Employee {
 */
 
 //CODE HERE
-let manager = new Manager('Winston', 'weekday mornings and weekday afternoons', 'CeCe', 'Schmidt');
+//create an array of employee objects for CeCe and Schmidt and pass this as parameter 3 to the Manager constructor
+
+let empThree = new Employee('CeCe', '');
+let empFour = new Employee('Schmidt', '');
+
+let winstonsEmps = [empThree, empFour];
+
+let manager = new Manager('Winston', 'weekday mornings and weekday afternoons', winstonsEmps);
+manager.addEmployee('Bob');
 
 /*
     Call the `getEmployees` method on the
@@ -156,4 +168,4 @@ manager.addEmployee('Coach')
 
 //CODE HERE
 manager.getEmployees()
-console.log(getEmployees);
+//console.log(getEmployees);
