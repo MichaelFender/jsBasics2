@@ -155,7 +155,7 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(tags => tags == 'dessert')
+const filteredFood = foodArr.filter(item => item.tags.includes('dessert'))
 
 console.log(filteredFood);
 
@@ -201,15 +201,40 @@ console.log(filteredFood);
 
 //CODE HERE
 function filterByProperty(property, number, type){
-    property.make = ('rating', 'popularity', 'price')
-    number.make = 100
-    type.make = (above, below)
-    let foodArr = [];
+    //filter for each property value. For example, if property == 'price' then filter
+    //on price => price > number if type is above or price => price < number if type is below
+    var filteredFoodArr;
 
-    filteredFoodArr = foodArr.filter(type => type.make === above)
+    if (property == 'price') {
+        if (type == 'above'){
+            filteredFoodArr = foodArr.filter(item => item.price > number); 
+        }else{
+            filteredFoodArr = foodArr.filter(item => item.price < number); 
+        }
+    } 
+    else if (property == 'rating'){
+        if (type == 'above'){
+            filteredFoodArr = foodArr.filter(item => item.rating > number); 
+        }else{
+            filteredFoodArr = foodArr.filter(item => item.rating < number); 
 
-console.log(filteredFoodArr);
+        }
+    }
+    else if (property == 'popularity'){
+        if (type == 'above'){
+            filteredFoodArr = foodArr.filter(item => item.popularity > number); 
+        }else{
+            filteredFoodArr = foodArr.filter(item => item.popularity < number); 
+        }
+    }
+
+
+return filteredFoodArr;
 }
+
+
+
+
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
@@ -218,5 +243,4 @@ console.log(filteredFoodArr);
 */
 
 //CODE HERE
-filteredFoodArr.filter(property, number, type, foodArr);
-console.log(filteredFoodArr);
+console.log(filterByProperty('rating', 9, 'above'));
