@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 https://www.figma.com/file/4lxrjOkoh4A0dloJtazDj5/Fender's?node-id=0%3A1
 
+=======
+https://www.figma.com/file/4lxrjOkoh4A0dloJtazDj5/Fender's?node-id=0%3A1
+
+>>>>>>> 90bec91a23506dd9c97d08dbcd472dda9badbb90
 https://www.figma.com/file/yVVJB3KpNQ64Oi6aiaKwrN/Untitled
